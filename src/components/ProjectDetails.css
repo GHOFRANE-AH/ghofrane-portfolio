@@ -1,32 +1,17 @@
 .project-container {
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto; /* ✅ centre horizontalement */
+  margin: 0 auto;
   padding: 60px 40px;
   background-color: #ffe4f1;
   box-sizing: border-box;
 }
-.site-footer {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #6c757d;
-  padding: 20px 10px;
-  background-color: #fff0e4;
-  margin-top: 40px;
-}
-
-@media (max-width: 600px) {
-  .site-footer {
-    font-size: 1rem;
-    padding: 30px 15px;
-  }
-}
-
 
 .project-title {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 30px;
+  color: #d63384;
 }
 
 .project-image {
@@ -36,68 +21,54 @@
   max-width: 250px;
 }
 
-
-
-
-
-.project-container {
-  padding: 60px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  background-color: #ffe4f1;
-}
-
-.project-title {
-  color: #d63384;
-}
-
-.project-image-wrapper {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-
-
-.nav-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #d63384;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.nav-btn.right {
-  right: 10px;
-}
-
-.nav-btn.left {
-  left: 10px;
-}
-
-.image-indicator {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  background-color: #d63384;
-  color: #fff;
-  padding: 4px 10px;
-  border-radius: 8px;
+.site-footer {
+  text-align: center;
   font-size: 0.9rem;
+  color: #6c757d;
+  padding: 20px 10px;
+  background-color: #fff0e4;
+  margin-top: 40px;
 }
 
-.back-btn {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 10px 20px;
-  background-color: #d63384;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* ✅ Responsive mobile */
+@media (max-width: 600px) {
+  .project-container {
+    padding: 30px 15px;
+    max-width: 100%;
+  }
+
+  .project-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .project-image {
+    max-width: 180px;
+    margin-bottom: 20px;
+  }
+
+  .project-text,
+  .project-list {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .site-footer {
+    font-size: 1rem;
+    padding: 30px 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
 }

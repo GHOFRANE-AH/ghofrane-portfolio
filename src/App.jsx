@@ -8,6 +8,8 @@ import Availability from './components/Availability'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ProjectDetails from './components/ProjectDetails.jsx'
+import "./components/ProjectDetails.css";
+
 
 function Home() {
   return (

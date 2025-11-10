@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import "./ProjectDetails.css";
 function Projects() {
   return (
     <section id="projects" style={{ textAlign: 'center', padding: '60px 20px' }}>
