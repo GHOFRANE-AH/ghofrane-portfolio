@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Skills from './components/Skills'
@@ -6,8 +7,9 @@ import Services from './components/Services'
 import Availability from './components/Availability'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ProjectDetails from './components/ProjectDetails.jsx'
 
-function App() {
+function Home() {
   return (
     <>
       <Navbar />
@@ -25,13 +27,21 @@ function App() {
         <section id="services"><Services /></section>
         <section id="availability"><Availability /></section>
         <section id="contact"><Contact /></section>
-        
         <Footer />
       </div>
     </>
-    
   )
- 
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/lense-solidaire" element={<ProjectDetails />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App
