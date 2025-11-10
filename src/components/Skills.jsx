@@ -1,12 +1,45 @@
-import { FaReact, FaNodeJs, FaGitAlt, FaFigma } from 'react-icons/fa'
-import { SiMongodb, SiTypescript, SiJavascript } from 'react-icons/si'
+import { FaReact, FaNodeJs, FaGitAlt, FaFigma } from 'react-icons/fa';
+import { SiMongodb, SiTypescript, SiJavascript } from 'react-icons/si';
 
 function Skills() {
+  const sectionStyle = {
+    backgroundColor: "#fff0f5", // ✅ fond rose clair
+    color: '#000',              // ✅ texte noir
+    textAlign: 'center',
+    padding: '60px 20px',
+  };
+
+  const titleStyle = {
+    fontSize: '2rem',
+    color: '#d63384',
+    marginBottom: '20px',
+  };
+
+  const paragraphStyle = {
+    fontSize: '1.2rem',
+    marginBottom: '30px',
+  };
+
+  const iconContainerStyle = {
+    fontSize: '2rem',
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    gap: '20px',
+  };
+
+  const iconStyle = {
+    margin: '10px',
+    color: '#d63384',
+  };
+
   return (
-    <section style={{ textAlign: 'center', padding: '40px' }}>
-      <h2>Mes compétences</h2>
-      <p>Mon stack pour des applications fiables et performantes :</p>
-      <div style={{ fontSize: '2rem', marginTop: '20px' }}>
+    <section id="skills" style={sectionStyle}>
+      <h2 style={titleStyle}>Mes compétences</h2>
+      <p style={paragraphStyle}>
+        Mon stack pour des applications fiables et performantes :
+      </p>
+      <div style={iconContainerStyle}>
         <FaReact title="React" style={iconStyle} />
         <FaNodeJs title="Node.js" style={iconStyle} />
         <SiMongodb title="MongoDB" style={iconStyle} />
@@ -16,12 +49,7 @@ function Skills() {
         <FaFigma title="Figma" style={iconStyle} />
       </div>
     </section>
-  )
+  );
 }
 
-const iconStyle = {
-  margin: '10px',
-  color: '#d63384'
-}
-
-export default Skills
+export default Skills;

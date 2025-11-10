@@ -1,0 +1,8 @@
+.site-footer {
+  background-color: #fff0f5; /* ✅ rose clair */
+  color: #000; /* ✅ texte noir */
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+}
