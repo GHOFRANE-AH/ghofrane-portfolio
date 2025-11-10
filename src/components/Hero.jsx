@@ -59,7 +59,7 @@ function Hero() {
           📄 Mon CV
         </a>
         <a
-          href="https://github.com/GHOFRANE-hedna"
+          href="https://github.com/GHOFRANE-AH?tab=repositories"
           style={{
             display: 'inline-block',
             margin: '10px',
