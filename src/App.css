@@ -15,8 +15,27 @@ nav {
     gap: 10px;
   }
 
+
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #d63384;
+  padding: 12px 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
   nav a {
     font-size: 1rem;
-    padding: 8px;
+    padding: 8px 0;
   }
-}
+
