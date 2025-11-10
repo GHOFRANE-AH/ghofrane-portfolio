@@ -6,6 +6,21 @@
   background-color: #ffe4f1;
   box-sizing: border-box;
 }
+.site-footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6c757d;
+  padding: 20px 10px;
+  background-color: #fff0e4;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    font-size: 1rem;
+    padding: 30px 15px;
+  }
+}
 
 
 .project-title {
