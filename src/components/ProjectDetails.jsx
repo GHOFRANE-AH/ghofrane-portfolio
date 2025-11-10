@@ -36,7 +36,6 @@ function ProjectDetails() {
         ) : (
           <div className="project-end">
             <p>🎉 Toutes les images ont été affichées !</p>
-            <img src="/fin.PNG" alt="Fin du carrousel" className="project-image" />
           </div>
         )}
       </div>
