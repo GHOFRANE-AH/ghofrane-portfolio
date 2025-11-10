@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
-import "./ProjectDetails.css";
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './ProjectDetails.css';
 
 const images = [
   '/Capture1.PNG',
@@ -9,35 +9,41 @@ const images = [
   '/Capture4.PNG',
   '/capture5.PNG',
   '/Capture888.PNG'
-]
+];
 
 function ProjectDetails() {
-  const [current, setCurrent] = useState(0)
+  const [current, setCurrent] = useState(0);
 
-  const next = () => setCurrent((current + 1) % (images.length + 1))
-  const prev = () => setCurrent((current - 1 + images.length + 1) % (images.length + 1))
+  const next = () => {
+    if (current < images.length - 1) {
+      setCurrent(current + 1);
+    }
+  };
+
+  const prev = () => {
+    if (current > 0) {
+      setCurrent(current - 1);
+    }
+  };
 
   return (
     <div className="project-container">
+      {/* ✅ Bouton retour en haut */}
+      <div className="top-back">
+        <Link to="/" className="back-btn">← Retour à l’accueil</Link>
+      </div>
+
       <h1 className="project-title">🌍 Présentation de Lense-Solidaire</h1>
 
       <div className="project-image-wrapper">
-        {current < images.length ? (
-          <>
-            <img
-              src={images[current]}
-              alt={`Capture ${current + 1}`}
-              className="project-image"
-            />
-            <button onClick={prev} className="nav-btn left">←</button>
-            <button onClick={next} className="nav-btn right">→</button>
-            <div className="image-indicator">Image {current + 1} sur {images.length}</div>
-          </>
-        ) : (
-          <div className="project-end">
-            <p>🎉 Toutes les images ont été affichées !</p>
-          </div>
-        )}
+        <img
+          src={images[current]}
+          alt={`Capture ${current + 1}`}
+          className="project-image"
+        />
+        <button onClick={prev} className="nav-btn left" disabled={current === 0}>←</button>
+        <button onClick={next} className="nav-btn right" disabled={current === images.length - 1}>→</button>
+        <div className="image-indicator">Image {current + 1} sur {images.length}</div>
       </div>
 
       <p className="project-text">
@@ -71,10 +77,8 @@ function ProjectDetails() {
         <li>🧑‍🔧 Encadrants techniques</li>
         <li>👩‍💼 Admins</li>
       </ul>
-
-      <Link to="/" className="back-btn">← Retour à l’accueil</Link>
     </div>
-  )
+  );
 }
 
-export default ProjectDetails
+export default ProjectDetails;

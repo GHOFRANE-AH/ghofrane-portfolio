@@ -1,66 +1,86 @@
 .project-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 60px 40px;
-  background-color: #ffe4f1;
-  color: #000; /* ✅ texte noir */
-  box-sizing: border-box;
+  background-color: #fff0f5;
+  color: #000;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.top-back {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  background-color: #d63384;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
 }
 
 .project-title {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 30px;
+  font-size: 2rem;
   color: #d63384;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.project-text,
-.project-list {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #000; /* ✅ texte noir */
-  text-align: left;
+.project-image-wrapper {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .project-image {
-  display: block;
-  margin: 0 auto 30px auto;
   max-width: 100%;
-  width: 90%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-@media (max-width: 600px) {
-  .project-container {
-    padding: 30px 15px;
-  }
-
-  .project-title {
-    font-size: 1.8rem;
-  }
-
-  .project-text,
-  .project-list {
-    font-size: 1rem;
-  }
-
-  .project-image {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-.container {
-  width: 100%;
-  padding: 1rem;
-}
-.flex-wrapper {
-  display: flex;
-  flex-direction: column; /* pour mobile */
+  border-radius: 8px;
 }
 
-@media (min-width: 768px) {
-  .flex-wrapper {
-    flex-direction: row; /* pour tablette et desktop */
-  }
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #d63384;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.nav-btn.left {
+  left: 10px;
+}
+
+.nav-btn.right {
+  right: 10px;
+}
+
+.image-indicator {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.project-subtitle {
+  font-size: 1.5rem;
+  color: #d63384;
+  margin-top: 30px;
+}
+
+.project-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.project-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
