@@ -1,17 +1,26 @@
 .project-container {
-  min-height: 100vh; /* prend toute la hauteur de l'écran */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* centre verticalement */
-  align-items: center;     /* centre horizontalement */
-  padding: 60px 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; /* ✅ centre horizontalement */
+  padding: 60px 40px;
   background-color: #ffe4f1;
+  box-sizing: border-box;
 }
+
+
 .project-title {
-  color: #d63384;
   text-align: center;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
 }
+
+.project-image {
+  display: block;
+  margin: 0 auto 30px auto;
+  border-radius: 50%;
+  max-width: 250px;
+}
+
 
 
 
@@ -32,10 +41,7 @@
   margin-bottom: 20px;
 }
 
-.project-image {
-  width: 100%;
-  border-radius: 12px;
-}
+
 
 .nav-btn {
   position: absolute;
