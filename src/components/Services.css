@@ -1,0 +1,38 @@
+.services-section {
+  padding: 60px 20px;
+  background-color: #fff0f5;
+  color: #000; /* ✅ texte noir */
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2rem;
+  color: #d63384;
+  margin-bottom: 20px;
+}
+
+.services-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.services-section li {
+  margin-bottom: 10px;
+}
+
+/* ✅ Responsive mobile */
+@media (max-width: 600px) {
+  .services-section {
+    padding: 40px 15px;
+  }
+
+  .services-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .services-section ul {
+    font-size: 1rem;
+  }
+}

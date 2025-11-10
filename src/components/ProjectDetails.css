@@ -50,3 +50,17 @@
     max-width: 100%;
   }
 }
+.container {
+  width: 100%;
+  padding: 1rem;
+}
+.flex-wrapper {
+  display: flex;
+  flex-direction: column; /* pour mobile */
+}
+
+@media (min-width: 768px) {
+  .flex-wrapper {
+    flex-direction: row; /* pour tablette et desktop */
+  }
+}
