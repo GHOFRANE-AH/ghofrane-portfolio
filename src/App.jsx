@@ -9,7 +9,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ProjectDetails from './components/ProjectDetails.jsx'
 import "./components/ProjectDetails.css";
-
+import ProjectEcommerceDetails from './components/ProjectEcommerceDetails';
 
 function Home() {
   return (
@@ -41,6 +41,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/lense-solidaire" element={<ProjectDetails />} />
+              <Route path="/ecommerce" element={<ProjectEcommerceDetails />} />
       </Routes>
     </BrowserRouter>
   )
