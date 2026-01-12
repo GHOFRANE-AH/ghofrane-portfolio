@@ -106,6 +106,101 @@ function Projects() {
           </p>
         </div>
       </div>
+        {/* 🔹 Projet Lyter */}
+
+        <div
+
+style={{
+
+  display: 'flex',
+
+  alignItems: 'center',
+
+  justifyContent: 'center',
+
+  gap: '30px',
+
+  backgroundColor: '#fff',
+
+  borderRadius: '12px',
+
+  boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+
+  padding: '20px',
+
+  flexWrap: 'wrap',
+
+}}
+
+>
+
+<Link to="/lyter" style={{ display: 'block' }}>
+
+  <img
+
+    src="/lyter1.jpg"
+
+    alt="Lyter"
+
+    style={{
+
+      width: '120px',
+
+      height: 'auto',
+
+      borderRadius: '8px',
+
+      boxShadow: '0 2px 6px rgba(0,0,0,0.1)',
+
+      cursor: 'pointer',
+
+    }}
+
+  />
+
+</Link>
+
+<div style={{ textAlign: 'left', maxWidth: '500px' }}>
+
+  <Link
+
+    to="/lyter"
+
+    style={{
+
+      fontSize: '1.2rem',
+
+      color: '#d63384',
+
+      fontWeight: 'bold',
+
+      textDecoration: 'none',
+
+      cursor: 'pointer',
+
+    }}
+
+  >
+
+    Lyter
+
+  </Link>
+
+  <p style={{ marginTop: '8px', color: '#555', fontSize: '1rem' }}>
+
+    Plateforme intelligente combinant la génération de photos par IA et la création de contenu pour un usage professionnel. 
+
+    Quatre modes de génération : photos stylisées, illustrations LinkedIn, recommandations de contenu et sélection intelligente d'images.<br />
+
+    <strong>Technologies :</strong> React, Node.js/Express, Firebase, Google Gemini API, OpenAI GPT-4.<br />
+
+    <em>2025 – Plateforme IA professionnelle</em>
+
+  </p>
+
+</div>
+
+</div>
     </SectionTemplate>
   );
 }

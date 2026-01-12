@@ -10,6 +10,8 @@ import Footer from './components/Footer'
 import ProjectDetails from './components/ProjectDetails.jsx'
 import "./components/ProjectDetails.css";
 import ProjectEcommerceDetails from './components/ProjectEcommerceDetails';
+import LyterDetails from './components/LyterDetails';
+
 
 function Home() {
   return (
@@ -42,6 +44,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/lense-solidaire" element={<ProjectDetails />} />
               <Route path="/ecommerce" element={<ProjectEcommerceDetails />} />
+                      <Route path="/lyter" element={<LyterDetails />} />
+
       </Routes>
     </BrowserRouter>
   )
