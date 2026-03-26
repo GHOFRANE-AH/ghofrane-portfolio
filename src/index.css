@@ -61,6 +61,33 @@ a {
   color: inherit;
 }
 
+/* Navbar responsive */
+.navbar-root {
+  background-color: var(--accent);
+  padding: 14px 16px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 8px;
+  line-height: 1.2;
+}
+
+.navbar-link:hover {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
 /* Dynamique légère : logos compétences */
 @keyframes skillWiggle {
   0% { transform: translateY(0) rotate(0deg) scale(1); }
@@ -99,5 +126,26 @@ a {
     --text-lg: 1.08rem;
     --h1: 2.2rem;
     --h2: 1.65rem;
+  }
+
+  .navbar-root {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .navbar-link {
+    font-size: 0.95rem;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-root {
+    padding: 10px;
+  }
+
+  .navbar-link {
+    font-size: 0.9rem;
+    padding: 7px 9px;
   }
 }

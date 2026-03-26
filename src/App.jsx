@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
+import Recommendations from './components/Recommendations'
 import Services from './components/Services'
 import Availability from './components/Availability'
 import Contact from './components/Contact'
@@ -28,6 +29,7 @@ function Home() {
         <section id="hero"><Hero /></section>
         <section id="skills"><Skills /></section>
         <section id="projects"><Projects /></section>
+        <section id="recommendations"><Recommendations /></section>
         <section id="services"><Services /></section>
         <section id="availability"><Availability /></section>
         <section id="contact"><Contact /></section>

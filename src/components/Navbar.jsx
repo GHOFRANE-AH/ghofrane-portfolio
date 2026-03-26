@@ -1,28 +1,13 @@
 function Navbar() {
   return (
-    <nav style={{
-      backgroundColor: 'var(--accent)',
-      padding: '20px',
-      textAlign: 'center',
-      position: 'sticky',
-      top: 0,
-      zIndex: 1000
-    }}>
-      <a href="#hero" style={linkStyle}>Accueil</a>
-      <a href="#skills" style={linkStyle}>Compétences</a>
-      <a href="#projects" style={linkStyle}>Projets</a>
-    
-    
-      <a href="#contact" style={linkStyle}>Contact</a>
+    <nav className="navbar-root">
+      <a href="#hero" className="navbar-link">Accueil</a>
+      <a href="#skills" className="navbar-link">Compétences</a>
+      <a href="#projects" className="navbar-link">Projets</a>
+      <a href="#recommendations" className="navbar-link">Recommandations</a>
+      <a href="#contact" className="navbar-link">Contact</a>
     </nav>
   )
-}
-
-const linkStyle = {
-  margin: '0 15px',
-  color: '#fff',
-  textDecoration: 'none',
-  fontWeight: 'bold'
 }
 
 export default Navbar
