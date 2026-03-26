@@ -1,23 +1,24 @@
-import { FaReact, FaNodeJs, FaGitAlt, FaFigma } from 'react-icons/fa';
-import { SiMongodb, SiTypescript, SiJavascript } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaGitAlt, FaFigma, FaGithub } from 'react-icons/fa';
+import { SiMongodb, SiTypescript, SiJavascript, SiFlutter, SiFirebase } from 'react-icons/si';
 
 function Skills() {
   const sectionStyle = {
-    backgroundColor: "#fff0f5", // ✅ fond rose clair
-    color: '#000',              // ✅ texte noir
+    backgroundColor: "var(--surface)",
+    color: "var(--text)",
     textAlign: 'center',
     padding: '60px 20px',
   };
 
   const titleStyle = {
-    fontSize: '2rem',
-    color: '#d63384',
+    fontSize: 'var(--h2)',
+    color: 'var(--accent)',
     marginBottom: '20px',
   };
 
   const paragraphStyle = {
-    fontSize: '1.2rem',
+    fontSize: 'var(--text-base)',
     marginBottom: '30px',
+    color: 'var(--muted)',
   };
 
   const iconContainerStyle = {
@@ -30,7 +31,7 @@ function Skills() {
 
   const iconStyle = {
     margin: '10px',
-    color: '#d63384',
+    color: 'var(--accent)',
   };
 
   return (
@@ -40,13 +41,16 @@ function Skills() {
         Mon stack pour des applications fiables et performantes :
       </p>
       <div style={iconContainerStyle}>
-        <FaReact title="React" style={iconStyle} />
-        <FaNodeJs title="Node.js" style={iconStyle} />
-        <SiMongodb title="MongoDB" style={iconStyle} />
-        <SiTypescript title="TypeScript" style={iconStyle} />
-        <SiJavascript title="JavaScript" style={iconStyle} />
-        <FaGitAlt title="Git" style={iconStyle} />
-        <FaFigma title="Figma" style={iconStyle} />
+        <FaReact title="React" className="skill-icon is-animated" style={iconStyle} />
+        <FaNodeJs title="Node.js" className="skill-icon is-animated" style={iconStyle} />
+        <SiMongodb title="MongoDB" className="skill-icon is-animated" style={iconStyle} />
+        <SiTypescript title="TypeScript" className="skill-icon is-animated" style={iconStyle} />
+        <SiJavascript title="JavaScript" className="skill-icon is-animated" style={iconStyle} />
+        <FaGitAlt title="Git" className="skill-icon is-animated" style={iconStyle} />
+        <FaGithub title="GitHub" className="skill-icon is-animated" style={iconStyle} />
+        <SiFirebase title="Firebase" className="skill-icon is-animated" style={iconStyle} />
+        <SiFlutter title="Flutter" className="skill-icon is-animated" style={iconStyle} />
+        <FaFigma title="Figma" className="skill-icon is-animated" style={iconStyle} />
       </div>
     </section>
   );

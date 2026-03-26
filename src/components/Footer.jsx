@@ -1,12 +1,15 @@
 function Footer() {
+  const year = new Date().getFullYear();
   return (
     <footer style={{
-      backgroundColor: '#fdd6eaff',
-      color: '#030303ff',
+      backgroundColor: "var(--surface)",
+      color: "var(--text)",
       textAlign: 'center',
       padding: '20px'
     }}>
-      <p>© 2025 Ghofrane. Tous droits réservés.</p>
+      <p style={{ margin: 0, fontSize: "var(--text-base)", color: "var(--muted)" }}>
+        © {year} Ghofrane — fait avec soin. Tous droits réservés.
+      </p>
     </footer>
   );
 }

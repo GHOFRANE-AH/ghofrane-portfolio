@@ -1,68 +1,103 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* Thème (2 couleurs principales + neutres) */
+  --accent: #6d28d9;         /* violet (attirant) */
+  --accent-soft: #ede9fe;    /* violet très clair */
+  --text: #111827;
+  --muted: #4b5563;
+  --surface: #ffffff;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Typo */
+  --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --text-base: 1.1rem;
+  --text-lg: 1.2rem;
+  --h1: 3rem;
+  --h2: 2rem;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+* {
+  box-sizing: border-box;
 }
-a:hover {
-  color: #535bf2;
+
+html,
+body {
+  height: 100%;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: var(--font);
+  color: var(--text);
+  background-color: var(--accent-soft);
+  line-height: 1.6;
+}
+
+p,
+li,
+a,
+button,
+input,
+textarea {
+  font-size: var(--text-base);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin: 0 0 0.6rem;
+  color: var(--accent);
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: var(--h1);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+h2 {
+  font-size: var(--h2);
 }
 
-@media (prefers-color-scheme: light) {
+a {
+  color: inherit;
+}
+
+/* Dynamique légère : logos compétences */
+@keyframes skillWiggle {
+  0% { transform: translateY(0) rotate(0deg) scale(1); }
+  35% { transform: translateY(-7px) rotate(-5deg) scale(1.06); }
+  70% { transform: translateY(-4px) rotate(5deg) scale(1.04); }
+  100% { transform: translateY(0) rotate(0deg) scale(1); }
+}
+
+.skill-icon {
+  display: inline-block;
+  transition: transform 160ms ease, filter 160ms ease;
+  will-change: transform;
+}
+
+.skill-icon:hover {
+  transform: translateY(-6px) scale(1.08);
+  filter: drop-shadow(0 10px 14px rgba(0, 0, 0, 0.12));
+}
+
+.skill-icon.is-animated {
+  animation: skillWiggle 1.15s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-icon,
+  .skill-icon.is-animated {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Responsive : tailles cohérentes sur mobile */
+@media (max-width: 768px) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+    --text-base: 1.02rem;
+    --text-lg: 1.08rem;
+    --h1: 2.2rem;
+    --h2: 1.65rem;
   }
 }

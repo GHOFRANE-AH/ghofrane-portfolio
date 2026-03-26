@@ -1,7 +1,7 @@
 function Navbar() {
   return (
     <nav style={{
-      backgroundColor: '#d63384',
+      backgroundColor: 'var(--accent)',
       padding: '20px',
       textAlign: 'center',
       position: 'sticky',

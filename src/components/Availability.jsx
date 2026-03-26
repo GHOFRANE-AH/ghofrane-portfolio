@@ -1,28 +1,13 @@
+import SectionTemplate from "./SectionTemplate";
+
 function Availability() {
-  const sectionStyle = {
-    backgroundColor: '#fff0f5', // rose clair
-    padding: '2rem 1rem',
-    textAlign: 'center',
-  };
-
-  const titleStyle = {
-    color: '#c2185b', // rose foncé
-    fontSize: '2rem',
-    marginBottom: '1rem',
-  };
-
-  const textStyle = {
-    color: '#000000', // noir
-    fontSize: '1.2rem',
-  };
-
   return (
-    <section style={sectionStyle}>
-      <h2 style={titleStyle}>Disponible</h2>
-      <p style={textStyle}>
-        Actuellement en recherche d’alternance !
+    <SectionTemplate title="Disponible">
+      <p style={{ fontSize: "1.15rem", color: "#333", lineHeight: "1.8", margin: 0 }}>
+        Actuellement ouverte aux missions freelance (courtes ou longues), seule ou en équipe — avec une passation
+        claire (mini‑guide, explications) pour que vous soyez autonome après livraison.
       </p>
-    </section>
+    </SectionTemplate>
   );
 }
 

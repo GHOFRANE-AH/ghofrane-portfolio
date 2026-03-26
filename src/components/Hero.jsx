@@ -1,16 +1,16 @@
 function Hero() {
   return (
     <section style={{
-      background: '#ffe4f1',
+      background: 'var(--accent-soft)',
       padding: '80px 20px',
       textAlign: 'center',
-      fontFamily: 'Segoe UI, Roboto, sans-serif',
-      color: '#4a4a4a'
+      fontFamily: 'var(--font)',
+      color: 'var(--text)'
     }}>
        <h1 style={{
-        fontSize: '3rem',
+        fontSize: 'var(--h1)',
         marginTop: '30px',
-        color: '#d63384'
+        color: 'var(--accent)'
       }}>
         Ghofrane Hedna
       </h1>
@@ -25,20 +25,20 @@ function Hero() {
       />
     
       <h2 style={{
-        fontSize: '1.8rem',
+        fontSize: 'var(--h2)',
         marginBottom: '20px',
-        color: '#6c757d'
+        color: 'var(--muted)'
       }}>
         Développeuse Fullstack
       </h2>
       <p style={{
         maxWidth: '600px',
         margin: '0 auto 30px',
-        fontSize: '1.1rem',
+        fontSize: 'var(--text-base)',
         lineHeight: '1.6',
-        color: '#555'
+        color: 'var(--muted)'
       }}>
-        En recherche d’alternance ! Je conçois des applications web accessibles et sécurisées, avec une attention particulière à l’expérience utilisateur et à la qualité du code. Je suis prête à contribuer à des projets concrets au sein d’une équipe dynamique.
+        Disponible et actuellement ouverte aux missions freelance (courtes ou longues). Je conçois des applications web accessibles et sécurisées, avec une attention particulière à l’expérience utilisateur et à la qualité du code — en équipe ou en autonomie, selon vos besoins.
       </p>
       <div style={{ marginTop: '20px' }}>
         <a
@@ -49,7 +49,7 @@ function Hero() {
             display: 'inline-block',
             margin: '10px',
             padding: '12px 24px',
-            backgroundColor: '#d63384',
+            backgroundColor: 'var(--accent)',
             color: '#fff',
             borderRadius: '8px',
             textDecoration: 'none',
@@ -64,9 +64,9 @@ function Hero() {
             display: 'inline-block',
             margin: '10px',
             padding: '12px 24px',
-            backgroundColor: '#f8f9fa',
-            color: '#d63384',
-            border: '2px solid #d63384',
+            backgroundColor: 'var(--surface)',
+            color: 'var(--accent)',
+            border: '2px solid var(--accent)',
             borderRadius: '8px',
             textDecoration: 'none',
             fontWeight: 'bold'

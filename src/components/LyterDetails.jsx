@@ -120,6 +120,14 @@ function LyterDetails() {
 
         <li>🧠 <strong>Analyse contextuelle</strong> : Comprend l'intention des publications et recommande les visuels correspondants</li>
 
+        <li>🎙️ <strong>Assistant vocal</strong> : dictée et aide à la création de contenu</li>
+
+        <li>⚡ <strong>Création automatique de posts</strong> : génération de publications LinkedIn à partir d’un brief / mots‑clés</li>
+
+        <li>🔎 <strong>Recherche de posts similaires</strong> : suggestions à partir d’un mot‑clé pour s’inspirer et structurer le contenu</li>
+
+        <li>🔗 <strong>Intégration LinkedIn (API)</strong> : récupération et analyse de contenu / visuels via API LinkedIn (selon droits d’accès)</li>
+
         <li>🏷️ <strong>Système de tags</strong> : Tagging complet avec plus de 100 tags prédéfinis</li>
 
         <li>☁️ <strong>Stockage cloud</strong> : Intégration Firebase pour un stockage sécurisé des images</li>
@@ -154,7 +162,7 @@ function LyterDetails() {
 
       <div style={{ marginBottom: '30px' }}>
 
-        <h3 style={{ color: '#d63384', marginTop: '20px', marginBottom: '10px' }}>Mode Select - Génération basée sur le style</h3>
+        <h3 style={{ color: 'var(--accent)', marginTop: '20px', marginBottom: '10px' }}>Mode Select - Génération basée sur le style</h3>
 
         <ul className="project-list">
 
@@ -168,7 +176,7 @@ function LyterDetails() {
 
 
 
-        <h3 style={{ color: '#d63384', marginTop: '20px', marginBottom: '10px' }}>Mode Post - Génération automatique de prompts</h3>
+        <h3 style={{ color: 'var(--accent)', marginTop: '20px', marginBottom: '10px' }}>Mode Post - Génération automatique de prompts</h3>
 
         <ul className="project-list">
 
@@ -184,7 +192,7 @@ function LyterDetails() {
 
 
 
-        <h3 style={{ color: '#d63384', marginTop: '20px', marginBottom: '10px' }}>Mode Lab - Sélection intelligente</h3>
+        <h3 style={{ color: 'var(--accent)', marginTop: '20px', marginBottom: '10px' }}>Mode Lab - Sélection intelligente</h3>
 
         <ul className="project-list">
 
@@ -200,7 +208,7 @@ function LyterDetails() {
 
 
 
-        <h3 style={{ color: '#d63384', marginTop: '20px', marginBottom: '10px' }}>Mode Lyter - Illustrations conceptuelles</h3>
+        <h3 style={{ color: 'var(--accent)', marginTop: '20px', marginBottom: '10px' }}>Mode Lyter - Illustrations conceptuelles</h3>
 
         <ul className="project-list">
 
@@ -225,6 +233,14 @@ function LyterDetails() {
         <li>🎨 Génération d'images par IA avec Google Gemini 2.5 Flash</li>
 
         <li>🧠 Ingénierie de prompts intelligente avec OpenAI GPT-4</li>
+
+        <li>🎙️ Expérience “hands‑free” : dictée / assistant vocal pour accélérer la rédaction</li>
+
+        <li>📝 Génération de posts & reformulation (ton, structure, accroche)</li>
+
+        <li>🔎 Recherche / matching de posts similaires par mot‑clé</li>
+
+        <li>🔗 Intégrations LinkedIn via API (en fonction des permissions)</li>
 
         <li>📦 Compression automatique d'images pour un traitement plus rapide</li>
 

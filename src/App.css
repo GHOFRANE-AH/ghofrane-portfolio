@@ -3,7 +3,7 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  background-color: #d63384;
+  background-color: var(--accent);
   padding: 10px 20px;
 }
 
