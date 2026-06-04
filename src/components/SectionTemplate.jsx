@@ -1,29 +1,13 @@
-function SectionTemplate({ title, children }) {
+function SectionTemplate({ title, subtitle, children, centered = true }) {
   return (
-    <section
-      style={{
-        backgroundColor: "var(--surface)",
-        color: "var(--text)",
-        padding: "60px 20px",
-        maxWidth: "800px",
-        margin: "40px auto",
-        borderRadius: "12px",
-        boxShadow: "var(--shadow)",
-        textAlign: "center",
-      }}
-    >
-      <h2
-        style={{
-          fontSize: "var(--h2)",
-          color: "var(--accent)",
-          marginBottom: "20px",
-        }}
-      >
-        {title}
-      </h2>
+    <div className="section-inner">
+      <header className={`section-header ${centered ? '' : ''}`}>
+        <h2>{title}</h2>
+        {subtitle && <p>{subtitle}</p>}
+      </header>
       {children}
-    </section>
-  );
+    </div>
+  )
 }
 
-export default SectionTemplate;
+export default SectionTemplate

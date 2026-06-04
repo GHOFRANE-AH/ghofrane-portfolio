@@ -1,30 +1,39 @@
-import SectionTemplate from "./SectionTemplate";
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import SectionTemplate from './SectionTemplate'
 
 function Contact() {
   return (
-    <div id="contact">
-      <SectionTemplate title="Me contacter">
-        <p style={{ margin: "10px 0", color: "var(--muted)" }}>
-          Email :{" "}
-          <a href="mailto:ghofranehed820@gmail.com" style={{ color: "var(--text)", fontWeight: 600 }}>
-            ghofranehed820@gmail.com
-          </a>
-        </p>
-        <p style={{ margin: "10px 0", color: "var(--muted)" }}>
-          LinkedIn :{" "}
+    <SectionTemplate
+      title="Me contacter"
+      subtitle="Utilisez l'assistant en bas à droite pour les questions courantes, ou contactez-moi directement ci-dessous."
+    >
+      <div className="contact-block">
+        <div className="contact-grid">
           <a
             href="https://www.linkedin.com/in/ghofrane-hedna/"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "var(--text)", fontWeight: 600 }}
+            className="contact-card"
           >
-            linkedin.com/in/ghofrane
+            <FaLinkedin size={28} aria-hidden />
+            <strong>LinkedIn</strong>
+            <span>ghofrane-hedna</span>
           </a>
-        </p>
-      </SectionTemplate>
-    </div>
-  );
+
+          <a
+            href="https://github.com/GHOFRANE-AH"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-card"
+          >
+            <FaGithub size={28} aria-hidden />
+            <strong>GitHub</strong>
+            <span>GHOFRANE-AH</span>
+          </a>
+        </div>
+      </div>
+    </SectionTemplate>
+  )
 }
 
-export default Contact;
-
+export default Contact

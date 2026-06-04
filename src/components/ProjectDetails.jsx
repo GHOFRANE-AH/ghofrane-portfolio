@@ -1,6 +1,7 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './ProjectDetails.css';
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import PageLayout from './PageLayout'
+import './ProjectDetails.css'
 
 const images = [
   '/Capture1.PNG',
@@ -8,77 +9,85 @@ const images = [
   '/capture3.PNG',
   '/Capture4.PNG',
   '/capture5.PNG',
-  '/Capture888.PNG'
-];
+  '/Capture888.PNG',
+]
 
 function ProjectDetails() {
-  const [current, setCurrent] = useState(0);
-
-  const next = () => {
-    if (current < images.length - 1) {
-      setCurrent(current + 1);
-    }
-  };
-
-  const prev = () => {
-    if (current > 0) {
-      setCurrent(current - 1);
-    }
-  };
+  const [current, setCurrent] = useState(0)
 
   return (
-    <div className="project-container">
-      {/* ✅ Bouton retour en haut */}
-      <div className="top-back">
-        <Link to="/" className="back-btn">← Retour à l’accueil</Link>
+    <PageLayout>
+      <div className="project-page">
+        <div className="project-container">
+          <div className="top-back">
+            <Link to="/#projects" className="back-btn">
+              ← Retour aux projets
+            </Link>
+          </div>
+
+          <h1 className="project-title">Lense-Solidaire</h1>
+
+          <div className="project-image-wrapper">
+            <img
+              src={images[current]}
+              alt={`Capture ${current + 1} du projet Lense-Solidaire`}
+              className="project-image"
+            />
+            <button
+              type="button"
+              onClick={() => setCurrent((c) => c - 1)}
+              className="nav-btn left"
+              disabled={current === 0}
+              aria-label="Image précédente"
+            >
+              ←
+            </button>
+            <button
+              type="button"
+              onClick={() => setCurrent((c) => c + 1)}
+              className="nav-btn right"
+              disabled={current === images.length - 1}
+              aria-label="Image suivante"
+            >
+              →
+            </button>
+            <div className="image-indicator">
+              Image {current + 1} sur {images.length}
+            </div>
+          </div>
+
+          <p className="project-text">
+            Plateforme intelligente qui assiste les associations dans l&apos;étiquetage
+            équitable des objets d&apos;occasion grâce à l&apos;IA et une gestion centralisée
+            des règles de prix.
+          </p>
+
+          <h2 className="project-subtitle">Objectif</h2>
+          <p className="project-text">
+            Aider salariés et bénévoles à étiqueter les articles reçus pour les revendre à un
+            prix juste, en s&apos;appuyant sur des critères clairs et une base de règles
+            partagée.
+          </p>
+
+          <h2 className="project-subtitle">Points clés</h2>
+          <ul className="project-list">
+            <li>Réduction des écarts de prix entre objets similaires</li>
+            <li>Standardisation de l&apos;étiquetage</li>
+            <li>Centralisation des règles de prix</li>
+            <li>Transparence pour les associations et les donateurs</li>
+          </ul>
+
+          <h2 className="project-subtitle">Technologies</h2>
+          <ul className="project-list">
+            <li><strong>Frontend</strong> : React (Netlify)</li>
+            <li><strong>Backend</strong> : Express.js + MongoDB Atlas (Render)</li>
+            <li><strong>IA</strong> : MobileNet via TensorFlow.js</li>
+            <li><strong>Admin</strong> : gestion sécurisée des règles</li>
+          </ul>
+        </div>
       </div>
-
-      <h1 className="project-title">🌍 Présentation de Lense-Solidaire</h1>
-
-      <div className="project-image-wrapper">
-        <img
-          src={images[current]}
-          alt={`Capture ${current + 1}`}
-          className="project-image"
-        />
-        <button onClick={prev} className="nav-btn left" disabled={current === 0}>←</button>
-        <button onClick={next} className="nav-btn right" disabled={current === images.length - 1}>→</button>
-        <div className="image-indicator">Image {current + 1} sur {images.length}</div>
-      </div>
-
-      <p className="project-text">
-        Lense-Solidaire est une plateforme intelligente qui assiste les associations dans l’étiquetage équitable des objets d’occasion grâce à l’intelligence artificielle et une gestion centralisée des règles de prix.
-      </p>
-
-      <h2 className="project-subtitle">🎯 Objectif du projet</h2>
-      <p className="project-text">
-        L’objectif est d’aider les salariés et bénévoles des associations à étiqueter les articles qu’ils reçoivent afin de les revendre plus tard à un prix juste...
-      </p>
-
-      <h2 className="project-subtitle">🧠 Pourquoi c’est important</h2>
-      <ul className="project-list">
-        <li>🔍 Éviter les écarts de prix injustifiés entre objets similaires</li>
-        <li>🏷️ Standardiser l’étiquetage selon des critères clairs</li>
-        <li>📊 Centraliser les règles de prix dans une base gérée</li>
-        <li>🤝 Renforcer la transparence et la confiance</li>
-      </ul>
-
-      <h2 className="project-subtitle">🛠️ Technologies utilisées</h2>
-      <ul className="project-list">
-        <li>⚛️ <strong>Frontend</strong> : React hébergé sur Netlify</li>
-        <li>🔙 <strong>Backend</strong> : Express.js + MongoDB Atlas sur Render</li>
-        <li>🧠 <strong>IA</strong> : MobileNet via TensorFlow.js</li>
-        <li>🔐 <strong>Espace admin</strong> : gestion sécurisée des règles</li>
-      </ul>
-
-      <h2 className="project-subtitle">👥 Utilisateurs concernés</h2>
-      <ul className="project-list">
-        <li>👷 Salariés et bénévoles</li>
-        <li>🧑‍🔧 Encadrants techniques</li>
-        <li>👩‍💼 Admins</li>
-      </ul>
-    </div>
-  );
+    </PageLayout>
+  )
 }
 
-export default ProjectDetails;
+export default ProjectDetails

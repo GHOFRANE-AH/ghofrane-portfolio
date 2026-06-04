@@ -1,17 +1,23 @@
 function Footer() {
-  const year = new Date().getFullYear();
+  const year = new Date().getFullYear()
+
   return (
-    <footer style={{
-      backgroundColor: "var(--surface)",
-      color: "var(--text)",
-      textAlign: 'center',
-      padding: '20px'
-    }}>
-      <p style={{ margin: 0, fontSize: "var(--text-base)", color: "var(--muted)" }}>
-        © {year} Ghofrane — fait avec soin. Tous droits réservés.
-      </p>
+    <footer className="site-footer">
+      <p>© {year} Ghofrane Hedna — Tous droits réservés.</p>
+      <div className="site-footer-links">
+        <a href="https://github.com/GHOFRANE-AH" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ghofrane-hedna/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </div>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer
