@@ -15,7 +15,7 @@ const SERVICES = [
   },
   {
     title: 'Growth & acquisition',
-    text: 'Acquisition de leads, landing pages, campagnes Ads, SEO et optimisation des conversions.',
+    text: 'Marketing digital, acquisition et prospection de leads, landing pages, campagnes Ads, SEO, tests A/B, optimisation des conversions et suivi CRM.',
   },
 ]
 

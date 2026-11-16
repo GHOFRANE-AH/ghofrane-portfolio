@@ -25,11 +25,17 @@ const GROWTH_TOOLS = [
   'SEMrush',
 ]
 
+const BUSINESS_SKILLS = [
+  'Marketing digital',
+  'Growth hacking',
+  'Business development',
+]
+
 function Skills() {
   return (
     <SectionTemplate
       title="Compétences"
-      subtitle="Une stack technique complétée par des outils d’acquisition et de mesure"
+      subtitle="Une double compétence technique et marketing, orientée acquisition et croissance"
     >
       <div className="skills-grid">
         {SKILLS.map((skill) => (
@@ -43,6 +49,12 @@ function Skills() {
         <h3>Growth &amp; acquisition</h3>
         <div className="growth-tool-list">
           {GROWTH_TOOLS.map((tool) => <span key={tool} className="tag">{tool}</span>)}
+        </div>
+      </div>
+      <div className="growth-tools">
+        <h3>Marketing &amp; développement business</h3>
+        <div className="growth-tool-list">
+          {BUSINESS_SKILLS.map((skill) => <span key={skill} className="tag">{skill}</span>)}
         </div>
       </div>
     </SectionTemplate>

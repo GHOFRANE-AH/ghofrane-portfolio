@@ -4,7 +4,7 @@
  */
 export const CHAT_CONFIG = {
   name: 'Ghofrane Hedna',
-  role: 'Développeuse Fullstack',
+  role: 'Développeuse Fullstack & Growth Hacker',
   whatsappNumber: '',
   linkedin: 'https://www.linkedin.com/in/ghofrane-hedna/',
   github: 'https://github.com/GHOFRANE-AH',
@@ -32,7 +32,7 @@ export const FAQ_ENTRIES = [
   {
     keywords: ['bonjour', 'salut', 'hello', 'coucou', 'bonsoir', 'hey', 'hi'],
     answer:
-      "Bonjour 👋\n\nJe suis l'assistant de Ghofrane Hedna, développeuse Fullstack.\n\nJe peux vous renseigner sur :\n• ses compétences techniques\n• ses projets (Lyter, E-commerce, Lense-Solidaire)\n• les services qu'elle propose\n• sa disponibilité freelance\n• comment la contacter\n\nQue souhaitez-vous savoir ?",
+      "Bonjour 👋\n\nJe suis l'assistant de Ghofrane Hedna, développeuse Fullstack et Growth Hacker.\n\nJe peux vous renseigner sur :\n• ses compétences techniques, marketing et business development\n• ses projets (Lyter, E-commerce, Lense-Solidaire)\n• ses services en développement web et acquisition\n• sa disponibilité freelance\n• comment la contacter\n\nQue souhaitez-vous savoir ?",
     priority: 1,
   },
   {
@@ -81,7 +81,7 @@ export const FAQ_ENTRIES = [
       'about',
     ],
     answer:
-      "Ghofrane Hedna est développeuse Fullstack.\n\nElle conçoit des applications web accessibles et robustes, avec une attention particulière à l'expérience utilisateur et à la qualité du code — en équipe ou en autonomie.\n\n📄 CV téléchargeable depuis la page d'accueil.\n🔗 LinkedIn : ghofrane-hedna\n🔗 GitHub : GHOFRANE-AH",
+      "Ghofrane Hedna est développeuse Fullstack et Growth Hacker. Elle associe développement web, marketing digital et acquisition pour concevoir des produits et contribuer à leur croissance.\n\nElle est diplômée d'un Master en intelligence artificielle et informatique fondamentale et suit une formation en Growth Hacking à Rocket School à Lyon, en alternance chez Nexhome.\n\n📄 CV téléchargeable depuis la page d'accueil.\n🔗 LinkedIn : ghofrane-hedna\n🔗 GitHub : GHOFRANE-AH",
     priority: 5,
   },
   {
@@ -118,8 +118,28 @@ export const FAQ_ENTRIES = [
       'outils',
     ],
     answer:
-      "Compétences principales de Ghofrane :\n\n• React\n• Node.js\n• MongoDB\n• TypeScript\n• JavaScript\n• Git & GitHub\n• Firebase\n• Flutter\n• Figma\n\nElle travaille aussi avec Express, SendGrid, TensorFlow.js, Gemini, OpenAI selon les projets.",
+      "Compétences de Ghofrane :\n\n• Développement : React, Node.js, MongoDB, TypeScript, JavaScript, Git & GitHub, Firebase, Flutter et Figma\n• Marketing digital et Growth Hacking : acquisition de leads, prospection LinkedIn, emailing, landing pages, tests A/B, SEO, campagnes Ads, tracking et automatisation\n• Business development : génération et qualification de leads, prospection et suivi via CRM\n\nOutils de mesure et d'acquisition affichés sur le site : Google Analytics, Google Tag Manager, Google Ads, Meta Ads, Zapier, Search Console et SEMrush.",
     priority: 6,
+  },
+  {
+    keywords: [
+      'marketing digital',
+      'marketing numerique',
+      'marketing',
+      'growth hacking',
+      'growth hacker',
+      'growth',
+      'acquisition',
+      'prospection',
+      'business development',
+      'developpement commercial',
+      'developpement business',
+      'generation de leads',
+      'lead generation',
+    ],
+    answer:
+      "Ghofrane développe ses compétences en marketing digital, Growth Hacking et business development. Elle travaille notamment sur l'acquisition et la prospection de leads, les landing pages et la conversion, le SEO et les campagnes Ads, ainsi que le tracking, les tests A/B et l'automatisation.\n\nPour le développement commercial, les sujets abordés incluent la prospection LinkedIn, l'emailing, la qualification de leads et leur suivi via CRM. Outils présentés sur le site : Google Analytics, Google Tag Manager, Google Ads, Meta Ads, Zapier, Search Console et SEMrush.",
+    priority: 7,
   },
   {
     keywords: ['react', 'frontend', 'front-end', 'front end', 'interface', 'ui', 'ux'],
@@ -183,7 +203,7 @@ export const FAQ_ENTRIES = [
       'pouvez vous',
     ],
     answer:
-      "Services proposés par Ghofrane :\n\n1️⃣ Sites & landing pages — vitrine, portfolio, pages d'accueil\n2️⃣ Applications sur mesure — plateformes, back-office, admin\n3️⃣ E-commerce — catalogue, commandes, emails, suivi\n4️⃣ Backend & APIs — Node.js, MongoDB, Firebase, déploiement\n5️⃣ Intégrations IA — Gemini, OpenAI, automatisations\n6️⃣ Maintenance & refonte — bugs, nouvelles fonctionnalités, passation claire",
+      "Services proposés par Ghofrane :\n\n1️⃣ Sites & landing pages — vitrine, portfolio, pages d'accueil\n2️⃣ Applications sur mesure — plateformes, back-office, admin\n3️⃣ E-commerce — catalogue, commandes, emails, suivi\n4️⃣ Backend & APIs — Node.js, MongoDB, Firebase, déploiement\n5️⃣ Intégrations IA — Gemini, OpenAI, automatisations\n6️⃣ Marketing digital & Growth Hacking — acquisition de leads, prospection, SEO, campagnes Ads, tests A/B et optimisation de conversion\n7️⃣ Business development — prospection, qualification de leads et suivi CRM\n8️⃣ Maintenance & refonte — bugs, nouvelles fonctionnalités, passation claire",
     priority: 6,
   },
   {
@@ -404,7 +424,7 @@ export const FAQ_ENTRIES = [
   {
     keywords: ['aide', 'help', 'question', 'besoin', 'renseignement', 'info', 'informations'],
     answer:
-      "Je peux vous aider sur :\n• Profil et compétences\n• Services (web, mobile, IA, e-commerce…)\n• Projets du portfolio\n• Disponibilité et contact\n\nTapez votre question ou utilisez les boutons suggérés.",
+      "Je peux vous aider sur :\n• Profil et compétences (développement, marketing digital, Growth Hacking, business development)\n• Services (web, mobile, IA, e-commerce et acquisition)\n• Projets du portfolio\n• Disponibilité et contact\n\nTapez votre question ou utilisez les boutons suggérés.",
     priority: 2,
   },
   {
