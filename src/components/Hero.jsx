@@ -1,4 +1,5 @@
 import { FaFileDownload, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 function Hero() {
   return (
@@ -12,15 +13,17 @@ function Hero() {
           height={200}
         />
         <div>
-          <h1>Ghofrane Hedna</h1>
-          <p className="hero-subtitle">Développeuse Fullstack</p>
+          <p className="hero-subtitle">Ghofrane Hedna · Développeuse fullstack &amp; growth hacker</p>
+          <h1>Je crée votre application web, puis je la fais croître</h1>
           <p className="hero-text">
-            Je conçois des applications web accessibles et robustes, avec une attention
-            particulière à l&apos;expérience utilisateur et à la qualité du code — en équipe
-            ou en autonomie.
+            Développeuse fullstack &amp; growth hacker : React, Node.js, IA, acquisition de
+            leads, SEO et campagnes Ads.
           </p>
           <div className="btn-group">
-            <a href="/cv-informatique.pdf" download className="btn btn-primary">
+            <Link to="/#contact" className="btn btn-primary">
+              Discutons de votre projet
+            </Link>
+            <a href="/cv-informatique.pdf" download className="btn btn-outline">
               <FaFileDownload aria-hidden /> Mon CV
             </a>
             <a

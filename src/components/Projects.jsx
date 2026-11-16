@@ -9,6 +9,7 @@ const PROJECTS = [
     title: 'Lyter',
     description:
       'Plateforme IA : génération de photos professionnelles, création de contenu LinkedIn, intégration API.',
+    growth: 'Actions SEO, tracking ou campagnes et résultats chiffrés à préciser.',
     tags: ['React', 'Node.js', 'Firebase', 'Gemini'],
     year: '2026',
   },
@@ -19,6 +20,7 @@ const PROJECTS = [
     title: 'Plateforme E-commerce',
     description:
       'Catalogue produits, commandes, emails transactionnels, bordereaux d\'expédition et suivi des statuts.',
+    growth: 'Actions SEO, tracking ou campagnes et résultats chiffrés à préciser.',
     tags: ['React', 'Express', 'MongoDB', 'SendGrid'],
     year: '2025',
   },
@@ -29,6 +31,7 @@ const PROJECTS = [
     title: 'Lense-Solidaire',
     description:
       'Estimation solidaire d\'objets d\'occasion pour associations, avec IA et règles de prix centralisées.',
+    growth: 'Actions SEO, tracking ou campagnes et résultats chiffrés à préciser.',
     tags: ['React', 'Express', 'TensorFlow.js'],
     year: '2025',
   },
@@ -47,6 +50,7 @@ function Projects() {
             <div>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
+              <p className="project-growth"><strong>Growth :</strong> {project.growth}</p>
               <div className="project-tags">
                 {project.tags.map((tag) => (
                   <span key={tag} className="tag">

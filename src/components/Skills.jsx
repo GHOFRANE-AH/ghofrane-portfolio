@@ -15,19 +15,35 @@ const SKILLS = [
   { Icon: FaFigma, name: 'Figma' },
 ]
 
+const GROWTH_TOOLS = [
+  'Google Analytics',
+  'Google Tag Manager',
+  'Google Ads',
+  'Meta Ads',
+  'Zapier',
+  'Search Console',
+  'SEMrush',
+]
+
 function Skills() {
   return (
     <SectionTemplate
       title="Compétences"
-      subtitle="Stack technique pour des applications fiables et performantes"
+      subtitle="Une stack technique complétée par des outils d’acquisition et de mesure"
     >
       <div className="skills-grid">
-        {SKILLS.map(({ Icon, name }) => (
-          <div key={name} className="skill-item">
-            <Icon aria-hidden />
-            <span>{name}</span>
+        {SKILLS.map((skill) => (
+          <div key={skill.name} className="skill-item">
+            <skill.Icon aria-hidden />
+            <span>{skill.name}</span>
           </div>
         ))}
+      </div>
+      <div className="growth-tools">
+        <h3>Growth &amp; acquisition</h3>
+        <div className="growth-tool-list">
+          {GROWTH_TOOLS.map((tool) => <span key={tool} className="tag">{tool}</span>)}
+        </div>
       </div>
     </SectionTemplate>
   )

@@ -382,6 +382,57 @@ button:focus-visible {
   text-align: center;
 }
 
+.growth-tools {
+  max-width: 720px;
+  margin: 2rem auto 0;
+  text-align: center;
+}
+
+.growth-tools h3 {
+  font-family: var(--font);
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.growth-tool-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.about-content {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.about-copy p {
+  margin: 0 0 1rem;
+  color: var(--muted);
+}
+
+.about-list {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+  color: var(--muted);
+}
+
+.about-list li::marker {
+  color: var(--accent);
+}
+
+.about-copy .about-closing {
+  margin: 0;
+  color: var(--text);
+  font-weight: 600;
+}
+
 /* Projects */
 .projects-list {
   display: flex;
@@ -431,6 +482,16 @@ button:focus-visible {
   font-size: 0.95rem;
 }
 
+.project-card .project-growth {
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--accent-soft);
+  font-size: 0.85rem;
+}
+
+.project-growth strong {
+  color: var(--accent);
+}
+
 .project-tags {
   display: flex;
   flex-wrap: wrap;
@@ -477,6 +538,43 @@ button:focus-visible {
   margin: 0;
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+.growth-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.25rem;
+}
+
+.growth-card {
+  padding: 1.5rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+  border-top: 3px solid var(--accent);
+  box-shadow: var(--shadow);
+}
+
+.growth-card h3 {
+  font-family: var(--font);
+  font-size: 1.1rem;
+}
+
+.growth-card ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.growth-card li {
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-hover);
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
 /* Availability */

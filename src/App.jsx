@@ -6,6 +6,8 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Recommendations from './components/Recommendations'
 import Services from './components/Services'
+import Growth from './components/Growth'
+import About from './components/About'
 import Availability from './components/Availability'
 import Contact from './components/Contact'
 import ProjectDetails from './components/ProjectDetails.jsx'
@@ -47,12 +49,12 @@ function Home() {
   return (
     <PageLayout withFooter>
       <section id="hero"><Hero /></section>
+      <section id="about" className="page-section"><About /></section>
       <section id="skills" className="page-section page-section--alt"><Skills /></section>
-      <section id="projects" className="page-section"><Projects /></section>
-      <section id="recommendations" className="page-section page-section--alt">
-        <Recommendations />
-      </section>
       <section id="services" className="page-section"><Services /></section>
+      <section id="growth" className="page-section page-section--alt"><Growth /></section>
+      <section id="projects" className="page-section"><Projects /></section>
+      <section id="recommendations" className="page-section page-section--alt"><Recommendations /></section>
       <section id="availability" className="page-section page-section--alt">
         <Availability />
       </section>

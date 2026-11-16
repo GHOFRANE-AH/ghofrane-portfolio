@@ -3,10 +3,12 @@ import { Link, useLocation } from 'react-router-dom'
 
 const NAV_ITEMS = [
   { hash: '#hero', label: 'Accueil' },
+  { hash: '#about', label: 'À propos' },
   { hash: '#skills', label: 'Compétences' },
+  { hash: '#services', label: 'Services' },
+  { hash: '#growth', label: 'Growth' },
   { hash: '#projects', label: 'Projets' },
   { hash: '#recommendations', label: 'Recommandations' },
-  { hash: '#services', label: 'Services' },
   { hash: '#availability', label: 'Disponibilité' },
   { hash: '#contact', label: 'Contact' },
 ]

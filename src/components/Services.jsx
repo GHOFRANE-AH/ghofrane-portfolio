@@ -2,28 +2,20 @@ import SectionTemplate from './SectionTemplate'
 
 const SERVICES = [
   {
-    title: 'Sites & landing pages',
-    text: 'Vitrine, portfolio, pages d\'accueil — petits ou grands projets.',
-  },
-  {
-    title: 'Applications sur mesure',
-    text: 'Plateformes, outils internes, back-office et espaces admin.',
+    title: 'Développement web',
+    text: 'Sites, applications sur mesure, APIs et outils métier, du prototype à la mise en ligne.',
   },
   {
     title: 'E-commerce',
-    text: 'Catalogue, commandes, emails transactionnels, suivi et statuts.',
-  },
-  {
-    title: 'Backend & APIs',
-    text: 'Node.js / Express, MongoDB, Firebase, déploiement et support.',
+    text: 'Boutiques en ligne, gestion des commandes, emails transactionnels et expérience d’achat.',
   },
   {
     title: 'Intégrations IA',
-    text: 'Génération de contenu, Gemini, OpenAI, automatisations métier.',
+    text: 'Fonctionnalités intelligentes, génération de contenu et automatisations métier.',
   },
   {
-    title: 'Maintenance & refonte',
-    text: 'Bugs, nouvelles fonctionnalités, optimisation et passation claire.',
+    title: 'Growth & acquisition',
+    text: 'Acquisition de leads, landing pages, campagnes Ads, SEO et optimisation des conversions.',
   },
 ]
 
