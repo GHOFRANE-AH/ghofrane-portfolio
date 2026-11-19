@@ -1,18 +1,7 @@
-import { useEffect } from 'react'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import SectionTemplate from './SectionTemplate'
 
 function Contact() {
-  useEffect(() => {
-    if (document.querySelector('script[data-hubspot-forms-embed]')) return
-
-    const script = document.createElement('script')
-    script.src = 'https://js-eu1.hsforms.net/forms/embed/149809438.js'
-    script.defer = true
-    script.dataset.hubspotFormsEmbed = 'true'
-    document.body.appendChild(script)
-  }, [])
-
   return (
     <SectionTemplate
       title="Me contacter"
