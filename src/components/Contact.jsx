@@ -31,6 +31,12 @@ function Contact() {
             <span>GHOFRANE-AH</span>
           </a>
         </div>
+        <div
+          className="hs-form-frame"
+          data-region="eu1"
+          data-form-id="2f525de7-1e64-4ad9-8ff5-b39b86ecbd22"
+          data-portal-id="149809438"
+        />
       </div>
     </SectionTemplate>
   )
